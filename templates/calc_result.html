@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>CALC MORE!</title>
+  </head>
+
+  <body>
+    <h1>Your Answer:</h1>
+      <p1> {{ result }} </p1>
+
+    <h2>
+      <img src=http://www.math.unl.edu/~s-khall13/mathrules.jpg alt="Math Rules"
+      />
+  <h1>Let's do some more MATH!!!</h1>
+  <strong>Input 2 values and select an operator.</strong>
+    <form action="/calculator" method="POST" >
+      <div class=first>
+        First Value:
+        <input id="first-operand" type="text" name="first" value="{{ result }}"></input>
+      </div>
+      <div class="Operator">
+        <select id="the-operator" name="operator">
+          <option>+</option>
+          <option>-</option>
+          <option>*</option>
+          <option>/</option>
+          <option>**</option>
+          <option>%</option>
+        </select>
+      </div>
+      <div class=second>
+      Second Value:
+      <input id="second-operand" type="text" name="second"></input>
+      </div>
+        <input type=submit value="Calculate!"</input>
+      </form>
+    </body>
+</html>

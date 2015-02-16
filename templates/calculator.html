@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Calc that!</title>
+  </head>
+
+  <body>
+    <h1>Python Web Calculator</h1>
+      <strong>Input 2 values and select an operator.</strong>
+      <form action="/calculator" method="POST" >
+      <div class=first>
+        First Value:
+        <input id="first-operand" type="text" name="first"></input>
+      </div>
+      <div class="Operator">
+        <select id="the-operator" name="operator">
+          <option>+</option>
+          <option>-</option>
+          <option>*</option>
+          <option>/</option>
+          <option>**</option>
+          <option>%</option>
+        </select>
+      </div>
+      <div class=second>
+      Second Value:
+      <input id="second-operand" type="text" name="second"></input>
+      </div>
+        <input type=submit value="Calculate!"</input>
+      </form>
+    </body>
+</html>
